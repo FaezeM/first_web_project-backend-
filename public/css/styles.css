@@ -1,0 +1,278 @@
+body {
+    font-family: IRANsans,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+header img,
+footer .top .brand img {
+    margin: 0;
+    width: 12rem;
+    height: 4rem;
+}
+header .images img,
+footer .bottom .links img {
+    margin: 1rem;
+    width: 1rem;
+    height: 1rem;
+}
+header nav a,
+header nav div,
+footer .top nav ul li {
+    font-size: 1em;
+}
+header nav a,
+header nav div {
+    color: black;
+    font-weight: bold;
+    margin:0 1rem;
+}
+header nav {
+    display: flex;
+    justify-content: space-around;
+    min-width: 60%;
+    padding: 1rem;
+}
+header nav div div {
+    text-align: center;
+    position: relative;
+    bottom: 2.1rem;
+    right: 2.1rem;
+    background-color: rgba(255, 0, 0, 0.7);
+    border-radius: 50%;
+    color: white;
+    width: 1.4rem;
+    height: 1.4rem;
+    font-family: IRANsans;
+}
+.banner {
+    background-image: url(../resources/analia-baggiano-Fvrhax5327o-unsplash.jpg);
+    background-position: center;
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20% 2rem;
+}
+.banner h1 {
+    font-size: 5.2vw;
+    width: 40%;
+    color: 	#27242f; 
+}
+.banner p,
+h4,
+.popular p,
+.choice .description p,
+footer .top nav ul li a,
+footer .top .brand p,
+.popular .items figure figcaption h6 {
+    color: #441b1f;
+}
+.banner p {
+    font-weight: bold;
+    width: 30%;
+    margin-bottom: 2rem;
+}
+.banner a {
+    width: min-content;
+    background-color: #441b1f;
+}
+.popular a,
+.choice .description a {
+    background-color: #cf353e;
+}
+.banner a,
+.popular a,
+.choice .description a {
+    padding: 0.5rem 2rem;
+    color: white;
+    font-size: 1.3em;
+}
+h2 {
+    font-size: 2.5em;
+}
+.vid {
+    padding: 8rem 0;
+}
+.new h2 {
+    margin-right: 1.5vw;
+}
+.new,
+.popular,
+.choice,
+footer {
+    padding: 8.4vw 4.2vw;
+}
+.catalog,
+.gallery,
+.items,
+.choice,
+.options,
+.top,
+.top nav,
+footer .bottom,
+.more {
+    display: flex;
+    justify-content: space-between;
+}
+.items {
+    margin-bottom: 4vw;
+}
+.popular .items figure img,
+.catalog figure img {
+    max-width: 100%;
+    max-height: 720px;
+}
+.gallery .flexContainer {
+    object-fit: cover;
+    max-width: 100%;
+    height: 42vw;
+}
+.gallery .vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.gallery .vertical img {
+    max-width: 100%;
+    height: 20vw;
+}
+figure {
+    margin: 1vw;
+}
+figcaption {
+    text-align: center;
+}
+h4 {
+    font-size: 1.5em;
+    margin: 1rem;
+}
+h3 {
+    font-size: 1.7em;
+}
+h6 {
+    font-size: 1em;
+    color: red;
+    margin: 1rem;
+}
+.popular .items,
+header nav,
+header,
+.options,
+.top nav,
+.top {
+    flex-wrap: wrap;
+}
+.popular .items figure,
+.new .catalog figure {
+    max-width: 25%;
+}
+.popular .items figure img {
+    border-bottom: 0.5rem solid #cf353e;
+}
+.popular {
+    text-align: center;
+}
+video {
+    width: 100%;
+    height: 35vw;
+}
+.more {
+    margin-top: 6vw;
+    background-color: #cf353e;
+    color: white;
+    font-size: 1.3em;
+    min-width: 35%;
+    max-width: max-content;
+}
+.more a {
+    margin: 2rem;
+}
+.more img {
+    margin: 2rem;
+    width: 1.3em;
+    height: 1.3em;
+}
+.choice .description,
+.choice img {
+    width: 45%;
+}
+.choice .description {
+    padding-top: 10%;
+}
+.choice .description p {
+    padding-bottom: 3rem;
+}
+.options {
+    background-color:  #cf353e;
+    margin: 8rem 4rem;
+    padding: 2rem;
+}
+.options .container {
+    color: white;
+    margin: 2rem;
+    width: 27%;
+}
+.options .container p {
+    color: #f9e6af;
+}
+.options .container img {
+    width: 2rem;
+    height: 2rem;
+}
+footer .top {
+    margin-bottom: 5rem;
+}
+footer .top nav {
+    flex-basis: 70%;
+}
+footer .top nav ul li {
+    margin: 0.5rem;
+}
+ul {
+    margin-top: 0;
+}
+footer .top nav ul h4 {
+    text-align: start;
+    margin-top: 0;
+    margin-right: 0;
+    color: black;
+}
+@media only screen and (max-width: 1220px) {
+    .options .container {
+        width: 100%;
+    }
+    .choice .description {
+        padding-top: 0;
+    }
+}
+@media only screen and (max-width: 1020px) {
+    h4{
+        font-size: 1.3em;
+    }
+    .more a {
+        font-size: 1.2em;
+    }
+}
+@media only screen and (max-width: 640px) {
+    h4,
+    .more a {
+        font-size: 1em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+}

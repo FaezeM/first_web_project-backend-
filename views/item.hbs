@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item</title>
+</head>
+<body>
+    <h1>{{this._id}}</h1>
+    <form action="./{{this._id}}?_method=PUT" method="POST">
+        <input type="hidden", name="_method", value="PUT">
+        <input type="text" name="title" placeholder="Title">
+        <input type="text" name="cost" placeholder="Cost">
+        <input type="text" name="image" placeholder="Image source">
+        <input type="submit" value="Request item"> 
+    </form>
+</body>
+</html>

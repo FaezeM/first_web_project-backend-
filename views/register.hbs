@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css" type="text/css">
+    <title>register</title>
+</head>
+<body>
+    <div class="login-form">
+            <h1 class="text-center">Sign up</h1>
+            {{> messages}}
+            <form action="/users/register" method="POST">
+                <input class="form-control" type="text" name="name" placeholder="Username"  value="{{name}}"/><br>
+                <input class="form-control" type="text" name="email" placeholder="E-mail" value="{{email}}"/><br>
+                <input class="form-control" type="password" name="password" placeholder="Password" value="{{password}}"/><br>
+                <input class="form-control" type="password" name="password2" placeholder="Retype password" value="{{password2}}"/><br>
+    
+                <input class="btn btn-primary btn-block" type="submit" name="signup_submit" value="Sign me up" />
+            </form>
+    </div>
+</body>
+</html>

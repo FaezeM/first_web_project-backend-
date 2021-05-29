@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+</head>
+<body>
+    <header>
+        <img src="./resources/1200px-Once_Upon_a_Time_Logo.png" alt="logo">
+        <nav>
+            <a href="/users/register">Sign Up</a>
+            <a href="/users/login">Log In</a>
+            <a href="/users/logout">Log out</a>
+            <a href="">تازه ها</a>
+            <div>
+                <a href="">وبلاگ</a>
+                <div>!</div>
+            </div>
+            <a href="">برندها</a>
+            <a href="./reqNew">ارتباط با ما</a>
+        </nav>
+        <div class="images">
+            <img src="./resources/magnifying-glass.png" alt="search">
+            <img src="./resources/user-profile (1).png" alt="sign up/log in">
+            <img src="./resources/shopping-cart (1).png" alt="shop">
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <h1>طرح ایده آل خود را انتخاب کنید</h1>
+            <p>ارسال سریع 24 ساعته به تمام نقاط کشور‌، تحویل رایگان و پرداخت در محل. پیش از ارسال کالا ، هماهنگی های لازم در مورد تاریخ و زمان تحویل سفارش با مشتری ( تحویل گیرنده سفارش ) انجام می شود .</p>
+            <a href="">خرید</a>
+        </div>
+        <div class="new">
+            <h2>تازه ها</h2>
+            <div class="catalog">
+                {{#each newItemList}}
+                <figure>
+                    <img src="{{this.image}}" alt="{{this.title}}">
+                    <figcaption>
+                        <h4>مدل {{this.title}}</h4>
+                        <h6>{{this.cost}} تومان</h6>
+                    </figcaption>
+                </figure>
+                {{/each}}
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="./resources/jj-ying-dfjfNu3Q0Yc-unsplash.jpg" alt="watch4" class="flexContainer">
+            <img src="./resources/stil-D4jRahaUaIc-unsplash.jpg" alt="watch5" class="flexContainer">
+            <div class="vertical flexContainer">
+                <img src="./resources/krismawan-kadek-HK8DgJrYUnw-unsplash.jpg" alt="watch6">
+                <img src="./resources/the-5th-IQYR7N67dhM-unsplash.jpg" alt="watch7">
+            </div>
+        </div>
+        <div class="popular">
+            <h2>پرفروش ها</h2>
+            <p>با ضمانت اصالت کالای اورجینال و تضمین قیمت نمایندگی</p>
+            <div class="items">
+                {{#each popItemList}}
+                <figure>
+                    <img src="{{this.image}}" alt="{{this.title}}">
+                    <figcaption>
+                        <h4><a href="./{{this._id}}">مدل {{this.title}}   (remove)</a></h4>
+                        <h6><a href="./item/{{this._id}}">{{this.cost}} تومان    (edit)</a></h6>
+                    </figcaption>
+                </figure>
+                {{/each}}
+            </div>
+            <a href="">مشاهده محصولات دیگر</a>
+        </div>
+        <div class="vid">
+            <video src="./resources/San+Martin+Men's+Watches+Retro+Diver+Luxury+Sapphire+Automatic+Mechanical+Wristwatch+SN0055.mp4" controls>این ویدئو پشتیبانی نمی شود</video>
+            <div class="more">
+                <a href="" class="more">مشاهده کلیپ های بیشتر</a>
+                <img src="./resources/hiclipart.com.png" alt="">
+            </div>
+        </div>
+        <div class="choice">
+            <div class="description">
+                <h2>ساعت منتخب</h2>
+                <p>محصولاتی که در رده کلاسیک قرار می گیرند برای استایل های کژوال مناسب ترند. معمولا این نوع سبک طراحی ساده دارد. برای آقایان و خانم هایی که در استایل روزانه شان از لباس های ساده و کلاسیک استفاده می کنند، برای شرکت در جلسات کاری یا ملاقات دوستانه ساعت مچی کلاسیک انتخاب مناسبی است.</p>
+                <a href="">مشاهده</a>
+            </div>
+            <img src="./resources/louis-mornaud-2ANGTzt4VDY-unsplash.jpg" alt=""> 
+        </div>
+        <div class="choice">
+            <img src="./resources/saskia-fairfull-qu6X7vFGRLQ-unsplash.jpg" alt="">
+            <div class="description">
+                <h2>ساعت منتخب</h2>
+                <p>بیشتر اشخاصی که ساعت های حالت چرمی را انتخاب می کنند، صرفا برای ست کردن رنگ بند ساعت با اکسسوری های دیگر مانند کیف، کفش، برای آقایان با کمربند و یا… است. این موضوع دست شما را برای راحت تر ست کردن باز می کند.</p>
+                <a href="">مشاهده</a>
+            </div>
+        </div>
+        <div class="options">
+            <div class="container">
+                <img src="./resources/hiclipart.com (2).png" alt="">
+                <h3>خدمات پس از فروش</h3>
+                <p>دوره گارانتی بسته به توافقات قراردادی، با شرکت سازنده تا یکسال  می باشد و دوره وارانتی تا سال دهم تولید محصول را در برمی گیرد.</p>
+            </div>
+            <div class="container">
+                <img src="./resources/hiclipart.com (3).png" alt="">
+                <h3>فروش اقساطی</h3>
+                <p>توجه داشته باشید، در خرید های اقساطی امکان تعویض یا مرجوعی، به علت مورد پسند نبودن محصول مقدور نمی باشد.</p>
+            </div>
+            <div class="container">
+                <img src="./resources/hiclipart.com (4).png" alt="">
+                <h3>ضمانت بازگشت</h3>
+                <p>ممکن است محصولی که خریداری کرده اید با ایده آل ذهنتان مغایرت داشته باشد و مورد علاقه شما نباشد.</p>
+            </div>
+        </div>
+        <footer>
+            <div class="top">
+                <div class="brand">
+                    <img src="./resources/1200px-Once_Upon_a_Time_Logo.png" alt="logo">
+                    <p>طرح ایده آل خود را انتخاب کنید</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li ><h4>برندها</h4></li>
+                        <li><a href="">تولید کنندگان ساعت</a></li>
+                        <li><a href="">CASIO</a></li>
+                        <li><a href="">برندهای سوئیسی</a></li>
+                        <li><a href="">GIORGIO FEDON</a></li>
+                    </ul>
+                    <ul>
+                        <li ><h4>پشتیبانی</h4></li>
+                        <li><a href="">خدمات پس از فروش</a></li>
+                        <li><a href="">فروش اقساطی</a></li>
+                        <li><a href="">ضمانت بازگشت</a></li>
+                        <li><a href="">تضمین اصالت</a></li>
+                    </ul>
+                    <ul>
+                        <li ><h4>راهنمای سایت</h4></li>
+                        <li><a href="">نظر مشتریان ما</a></li>
+                        <li><a href="">روشهای خرید</a></li>
+                        <li><a href="">وبلاگ</a></li>
+                        <li><a href="">ارتباط با ما</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bottom">
+                <p>استفاده از مطالب فقط برای مقاصد غیرتجاری و با ذکر منبع بلامانع است. Copyright © 2020</p>
+                <div class="links">
+                    <img src="./resources/facebook.png" alt="facebook">
+                    <img src="./resources/twitter.png" alt="twitter">
+                    <img src="./resources/linkedin.png" alt="linkedin">
+                    <img src="./resources/gmail-logo.png" alt="gmail">
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
